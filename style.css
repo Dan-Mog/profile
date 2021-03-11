@@ -1,0 +1,115 @@
+body {
+  background-color: #edeef7;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #5b5b5b;
+  line-height: normal;
+  font-size: 15px;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  color: #435560;
+  font-size: 25px
+}
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  color: #b4aee8;
+  font-size: 23px
+}
+
+h3 {
+  font-family: 'Roboto Slab', serif;
+  color: #6e7c7c;
+  font-size: 18px
+}
+
+p {
+  margin-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+ }
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.card {
+  margin: 20px 0px;
+  background: white;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  background-color: #f4f9f9;
+  text-align: center;
+}
+
+.img-circle {
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.link-box {
+  background-color: #845ec2;
+  border-radius: 4px;
+  color: white;
+  padding: 12px 18px;
+}
+
+.link-box:hover {
+  background-color: #350b40;
+}
+
+.icons {
+  color: rgba(0,0,0,.3);
+  font-size: 40px;
+  padding: 0px;
+}
+
+.icons:hover {
+  color: #845ec2;
+}
+
+.footer {
+  margin: 20px 0px;
+  background: white;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  background-color: #f4f9f9;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 350px;
+  }
+}
