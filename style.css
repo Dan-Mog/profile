@@ -46,18 +46,28 @@ a {
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
   background-color: #f4f9f9;
   text-align: center;
-  display: none;
 }
 
-label {
-  display: inline-block;
-  margin-left: 130px;
-  margin-bottom: 20px;
-  cursor: pointer;
-  background-color: #440a67;
+.footer {
+  margin: 20px 0px;
+  background: white;
+  padding: 10px;
   border-radius: 4px;
-  color: white;
-  padding: 12px 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  background-color: #f4f9f9;
+  text-align: center;
+}
+
+.control-me::after {
+    content: "😐";
+    font-size: 80px;
+}
+#toggle:checked ~ .control-me::after {
+    content: "😁";
+}
+
+.visually-hidden {
+    position: absolute;
 }
 
 input[type=checkbox] {
@@ -86,13 +96,10 @@ input[type=checkbox]:checked + .card {
 
 .link-box {
   background-color: #845ec2;
+  cursor: pointer;
   border-radius: 4px;
   color: white;
   padding: 12px 18px;
-}
-
-.link-box:hover {
-  background-color: #350b40;
 }
 
 .icons {
@@ -103,16 +110,6 @@ input[type=checkbox]:checked + .card {
 
 .icons:hover {
   color: #845ec2;
-}
-
-.footer {
-  margin: 20px 0px;
-  background: white;
-  padding: 10px;
-  border-radius: 4px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.1);
-  background-color: #f4f9f9;
-  text-align: center;
 }
 
 @media (max-width: 960px) {
