@@ -46,6 +46,26 @@ a {
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
   background-color: #f4f9f9;
   text-align: center;
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin-left: 130px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: #440a67;
+  border-radius: 4px;
+  color: white;
+  padding: 12px 18px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked + .card {
+  display: block;
 }
 
 .img-circle {
